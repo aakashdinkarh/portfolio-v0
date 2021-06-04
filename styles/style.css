@@ -1,0 +1,160 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: hidden;
+    background-color: blueviolet;
+    transition: 0.5s;
+}
+.nav a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+#icon, #close {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+.nav a:hover {
+    background-color: rgb(80, 2, 152);
+}
+#logo {
+    font-size: xx-large;
+}
+
+/* My Image used part*/
+.myImage {
+    background-color: rgb(255, 255, 50);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.myImage .left {
+    text-align: center;
+    font-size: xx-large;
+    font-family: "Sofia", Verdana, Geneva, Tahoma, sans-serif;
+    color: #008038;
+}
+.myImage .left h2 {
+    display: inline-block;
+}
+.myImage .left h2 span {
+    animation-name: heading;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes heading {
+    0% { color: violet; }
+    33% { color: blue; }
+    66% { color: red; }
+    100% { color: violet; }
+}
+.myImage .left h2:hover span{
+    animation-play-state: paused;
+}
+.myImage .left button {
+    font-family: initial;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    background-color: #008038;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+.myImage .left button:hover i{
+    transform: translate(0, 3px);
+}
+.myImage .left button:hover {
+    background-color: #00632b;
+}
+
+/* Content of page */
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.info {
+    padding: 10px;
+    margin: 20px 0;
+    background-color: rgb(218, 254, 253);
+    box-shadow: 0px 0px 10px rgb(99, 99, 99);
+    width: 40%;
+}
+.info p, li {
+    padding-left: 20px;
+}
+.info > h3:first-child {
+    background-color: rgb(100, 171, 168);
+    text-align: center;
+    padding: 5px 0;
+}
+#edu-more,  #sports-more {
+    display: none;
+    transition: display 0.5s;
+}
+/* Bottom section of page */
+.bottom {
+    padding: 20px;
+    background-color: rgb(0, 33, 2);
+    color: white;
+    text-align: center;
+    font-size: larger;
+}
+.bottom span {
+    margin: 10px 20px;
+    display: inline-block;
+}
+.bottom a {
+    color: white;
+    text-decoration: none;
+}
+@media only screen and (max-width:700px) {
+    #menu-icon {
+        position: sticky;
+        top: 0;
+
+    }
+    #nav-bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: fixed;
+        z-index: 2;
+        left: 0;
+        width: 0;
+        height: 100%;
+        text-align: center;
+    }
+    #icon {
+        display: block;
+    }
+    .myImage .left {
+        font-size: medium;
+    }
+    .info {
+        width: 90%;
+    }
+    
+}

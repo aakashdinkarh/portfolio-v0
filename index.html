@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <title>Self Portfolio</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="scripts/script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <div class="nav" id="menu-icon">
+            <a onclick="barclick()" id='icon'><i class="fa fa-bars"></i></a>
+            <a onclick="closeclick()" id='close'>&times;</a>
+        </div>
+        
+        <div class="nav" id='nav-bar'>
+            <a href="#">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#hobby">Hobby</a>
+            <a href="#education">Education</a>
+            <a href="#sports">Sports</a>
+            <a href="#about">About</a>
+            <a href="#latest">Latest</a>
+        </div>
+        <div id="logo">
+            <span style="font-family: 'Sofia';">P</span><span>ortfolio</span>
+        </div>
+        
+        <!-- top content of page -->
+        <div class="myImage">
+            <div class="left">
+                <h2>Hi, I'm Aakash Dinkar<br>
+                    I'am a <span>Web Developer</span> 
+                </h2>
+                <button onclick="goto('skills')">
+                    Know more about me <i style="transition: transform 0.3s;" class="fa fa-angle-double-down"></i>
+                </button>
+            </div>
+            <div class="right">
+                <img src="portfolio.jpg" alt="My Image" style="max-width: 300px; width: 100%; vertical-align: middle;">
+            </div>
+        </div>
+
+        <!--Writing Content of page -->
+        <div class="info-container">
+            <div id="skills" class="info">
+                <h3>Skills</h3>
+                <p><h3>Web Development Skills: </h3>HTML5, CSS, JavaScript, jQuery<br><br>
+                    <h3>Other Skills: </h3>C++, MS office, Typing Speed upto 50wpm
+                </p>
+    
+            </div>
+            <div id="hobby" class="info">
+                <h3>Hobbies</h3>
+                <h3>Other than Web Development</h3>
+                <p>Mainly nowadays it's Weightlifting or any other physical workout.</p>
+            </div>
+            <div id="education" class="info">
+                <h3>Education</h3>
+                <h3>B-Tech (Civil Engineering)</h3>
+                <p>Institution - IIT (BHU), Varanasi [2018-2022]</p>
+                <div id='edu-more'>
+                    <h3>Senior Secondary Education</h3>
+                    <p>Institution - Govt. Sr. Sec. School Loharu, (Bhiwani) [2016-2017]</p>
+                    <h3>Secondary Education</h3>
+                    <p>Institution - Hindu Vidya Vihar Sr Sec School Loharu, (Bhiwani) [2014-2015]</p>
+                </div>
+                <button onclick="show_hide.bind(this)('edu-more')">Show more</button>
+            </div>
+            <div id="sports" class="info">
+                <h3>Sports</h3>
+                <h3>Position of Responsibility:</h3>
+                <p><li><strong>Vice Captain</strong> of Weightlifting Team, IITBHU (2020-present)</li></p>
+                    <div id='sports-more'>
+                <h3>Honours and Achievements:</h3>
+                <p>Sports: Weightlifting & Powerlifting
+                    <li>Participated in <b>InterIIT 2019 Weightlifting</b> competition</li>
+                    <li>Secured <b>2<sup>nd</sup></b>(66-74 kg) category in <b>Inter Hostel Powerlifting</b> Event [2019-2020]</li>
+                </p>
+                    <li>Secured <b>3<sup>rd</sup></b> position (59 kg - 66 kg) in <b>Inter-Branch Powerlifting</b> Competition [2018-2019]</li>
+                    <li>Participated in Annual Sports Fest of IIT BHU <b>Spardha'19</b> Weightlifting and Powerlifting Event</li>
+                </div>
+                <button onclick="show_hide.bind(this)('sports-more')">Show more</button>
+            </div>
+            <div id="about" class="info">
+                <h3>About</h3>
+                <address>
+                    Aakash Dinkar<br>
+                    Hometown: Loharu (Bhiwani), Haryana
+                </address>
+            </div>
+            <div id="latest" class="info">
+                <h3>Latest about me</h3>
+                <p>May 2021, I started an intern at Web-Student as a Web Developer</p>
+            </div>        
+        </div>
+
+        <div class="bottom">
+            <p>For any queries, contact me on any of the below details:<br>
+                <address>
+                    <span>Mobile: 7027658021</span><br>
+                    <span>G-mail: <a href="mailto:aakashdinkarh@gmail.com" target="_blank">aakashdinkarh@gmail.com</a></span><br>
+                </address>
+                    <span><a href="https://www.facebook.com/aakash.dinkar.5" target="_blank"><i class="fa fa-facebook"> </i> Facebook</a></span>
+                    <span><a href="https://www.instagram.com/aakash_1379" target="_blank"><i class="fa fa-instagram"> </i> Instagram</a></span>
+                    <span><a href="https://github.com/aakashdinkarh" target="_blank"><i class="fa fa-github"> </i> Github</a></span>
+            </p>
+        </div>
+    </body>
+</html>
