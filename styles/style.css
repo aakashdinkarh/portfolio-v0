@@ -102,6 +102,11 @@ html {
     box-shadow: 0px 0px 10px rgb(99, 99, 99);
     width: 40%;
 }
+.info button {
+    background-color: rgb(100, 171, 168);
+    border: none;
+    border-radius: 3px;
+}
 .info p, li {
     padding-left: 20px;
 }
