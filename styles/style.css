@@ -1,6 +1,7 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
+    background-color: #a2d1ff;
 }
 html {
     scroll-behavior: smooth;
@@ -29,6 +30,7 @@ html {
 #icon, #close {
     display: none;
     width: 100%;
+    font-size: 21px;
     text-align: center;
 }
 .nav a:hover {
@@ -36,6 +38,19 @@ html {
 }
 #logo {
     font-size: xx-large;
+    background-color: rgb(1, 152, 210);
+    padding: 10px;
+    display: table;
+    margin: auto;
+    border-radius: 30px;
+    animation: logoAnim 5s linear 0s infinite;
+}
+@keyframes logoAnim {
+    0% { border-radius: 30px 0 0 0}
+    25% { border-radius: 0 30px 0 0}
+    50% { border-radius: 0 0 30px 0}
+    75% { border-radius: 0 0 0 30px}
+    100% { border-radius: 30px 0 0 0}
 }
 
 /* My Image used part*/
@@ -106,6 +121,8 @@ html {
     background-color: rgb(100, 171, 168);
     border: none;
     border-radius: 3px;
+    font-size: medium;
+    padding: 10px;
 }
 .info p, li {
     padding-left: 20px;
