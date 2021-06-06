@@ -139,7 +139,6 @@ html {
 }
 #edu-more,  #sports-more {
     display: none;
-    transition: display 0.5s;
 }
 .project {
     width: 86.75%;
@@ -194,6 +193,5 @@ html {
     .info {
         width: 90%;
     }
-    .about { width: 90% }
-    
+
 }
