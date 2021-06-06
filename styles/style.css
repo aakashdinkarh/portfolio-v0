@@ -117,12 +117,17 @@ html {
     box-shadow: 0px 0px 10px rgb(99, 99, 99);
     width: 40%;
 }
+.about { width: 86.75% }
 .info button {
-    background-color: rgb(100, 171, 168);
+    background-color: rgb(137, 224, 220);
     border: none;
     border-radius: 3px;
     font-size: medium;
     padding: 10px;
+    cursor: pointer;
+}
+.info button:hover {
+    background-color: rgb(100, 171, 168);
 }
 .info p, li {
     padding-left: 20px;
@@ -136,6 +141,9 @@ html {
     display: none;
     transition: display 0.5s;
 }
+.project {
+    width: 86.75%;
+}
 /* Bottom section of page */
 .bottom {
     padding: 20px;
@@ -144,7 +152,7 @@ html {
     text-align: center;
     font-size: larger;
 }
-.bottom span {
+.bottom span:not(:last-child) {
     margin: 10px 20px;
     display: inline-block;
 }
@@ -152,11 +160,19 @@ html {
     color: white;
     text-decoration: none;
 }
+#top-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    background-color: red;
+    border-radius: 50%;
+    color: black;
+}
 @media only screen and (max-width:700px) {
     #menu-icon {
         position: sticky;
         top: 0;
-
     }
     #nav-bar{
         display: flex;

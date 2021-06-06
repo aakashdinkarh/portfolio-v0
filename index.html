@@ -19,12 +19,12 @@
         
         <div class="nav" id='nav-bar'>
             <a href="#">Home</a>
+            <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#hobby">Hobby</a>
             <a href="#education">Education</a>
             <a href="#sports">Sports</a>
-            <a href="#about">About</a>
-            <a href="#latest">Latest</a>
+            <a href="#project">Project</a>
         </div>
         <div id="logo">
             <span style="font-family: 'Sofia'; text-shadow: 1px 1px 2px white;">P</span><span>ortfolio</span>
@@ -36,7 +36,7 @@
                 <h2>Hi, I'm Aakash Dinkar<br>
                     I'am a <span>Web Developer</span> 
                 </h2>
-                <button onclick="goto('skills')">
+                <button onclick="go('skills')">
                     Know more about me <i style="transition: transform 0.3s;" class="fa fa-angle-double-down"></i>
                 </button>
             </div>
@@ -47,6 +47,23 @@
 
         <!--Writing Content of page -->
         <div class="info-container">
+            <div id="about" class="info about">
+                <h3>About</h3>
+                <div class="info-container">
+                    <img src="Photo.jpg" class="info" style="max-width: 300px; width: 100%; vertical-align: middle;" alt="about image (Aakash Dinkar)">
+                    <div class="info">
+                        Hi, I am Aakash Dinkar, completed my 3rd year of Btech Civil Engineering, from IIT (BHU) Varanasi.<br>
+                        I'm currently studying for Web Development, so far I have learned all Web Development things from
+                        <a href="https://www.w3schools.com">W3Schools</a>.
+
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <button onclick='(function(){ document.documentElement.scrollTop = 0 })();'>
+                        Download Resume
+                    </button>
+                </div>
+            </div>
             <div id="skills" class="info">
                 <h3>Skills</h3>
                 <p><h3>Web Development Skills: </h3>HTML5, CSS, JavaScript, jQuery<br><br>
@@ -86,29 +103,27 @@
                 </div>
                 <button onclick="show_hide.bind(this)('sports-more')">Show more</button>
             </div>
-            <div id="about" class="info">
-                <h3>About</h3>
-                <address>
-                    Aakash Dinkar<br>
-                    Hometown: Loharu (Bhiwani), Haryana
-                </address>
+            <div id="project" class="info project">
+                <h3>Project</h3>
+                <h4>Project under Incanus Technologies Private Limited</h4>
+                <p>During the period, I handled the Career Counselling category where I worked on different modules of company projects,
+                    campaigns and created many 1 minute videos for the target audience.
+                </p>
             </div>
-            <div id="latest" class="info">
-                <h3>Latest about me</h3>
-                <p>May 2021, I started an intern at Web-Student as a Web Developer</p>
-            </div>        
         </div>
 
         <div class="bottom">
             <p>For any queries, contact me on any of the below details:<br>
-                <address>
-                    <span>Mobile: 7027658021</span><br>
+                    <span><i class="fa fa-user"></i> Name: Aakash Dinkar</span><br>
+                    <span><i class='fa fa-mobile'></i> Mobile: 7027658021</span><br>
                     <span>G-mail: <a href="mailto:aakashdinkarh@gmail.com" target="_blank">aakashdinkarh@gmail.com</a></span><br>
-                </address>
                     <span><a href="https://www.facebook.com/aakash.dinkar.5" target="_blank"><i class="fa fa-facebook"> </i> Facebook</a></span>
                     <span><a href="https://www.instagram.com/aakash_1379" target="_blank"><i class="fa fa-instagram"> </i> Instagram</a></span>
                     <span><a href="https://github.com/aakashdinkarh" target="_blank"><i class="fa fa-github"> </i> Github</a></span>
             </p>
+            <span>&#169; <span style="color: #ff8709;">Aakash Dinkar</span> | 2021</span>
         </div>
+
+        <a id="top-btn" title="Go to top" href="#"><i style="text-align: center; width: 35px; height: 35px; font-size: xx-large;" class="fa fa-angle-double-up"></i></a>
     </body>
 </html>
