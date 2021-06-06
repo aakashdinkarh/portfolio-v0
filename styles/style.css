@@ -139,7 +139,6 @@ html {
 }
 #edu-more,  #sports-more {
     display: none;
-    transition: display 0.5s;
 }
 .project {
     width: 86.75%;
@@ -184,6 +183,7 @@ html {
         width: 0;
         height: 100%;
         text-align: center;
+        opacity: 0.9;
     }
     #icon {
         display: block;
@@ -194,6 +194,5 @@ html {
     .info {
         width: 90%;
     }
-    .about { width: 90% }
-    
+
 }
