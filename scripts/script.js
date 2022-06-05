@@ -5,8 +5,7 @@ function go(loc) {
 
 function show_hide(a) {
   let element = document.getElementById(a);
-
-  if (this.innerHTML === "Show more") {
+  if (this.innerText === "Show more") {
     $(element).show(500);
     this.innerHTML = "Show less";
   } else {
