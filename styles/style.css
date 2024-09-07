@@ -192,6 +192,9 @@ li {
   margin: 10px 20px;
   display: inline-block;
 }
+.copyright span {
+  margin: 0 !important;
+}
 .bottom a {
   color: white;
   text-decoration: none;

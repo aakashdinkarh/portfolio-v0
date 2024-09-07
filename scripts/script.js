@@ -39,3 +39,8 @@ function closeclick() {
   baricon.style.display = "block";
   closebtn.style.display = "none";
 }
+
+(function updateCopyright() {
+  const copyrightElement = document.getElementsByClassName('copyright')[0];
+  copyrightElement.children[1].innerText = `| ${new Date().getFullYear()}`;
+})();
