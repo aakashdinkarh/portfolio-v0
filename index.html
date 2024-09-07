@@ -61,11 +61,19 @@
         </button>
       </div>
       <div class="right">
-        <img
-          src="portfolio.jpg"
-          alt="My Image"
-          style="max-width: 300px; width: 100%; vertical-align: middle"
-        />
+        <picture>
+          <source srcset="
+          https://aakashdinkarh.github.io/static_assets/images/portfolio/avif-images/portfolio-v0.avif
+              ">
+          <source srcset="
+          https://aakashdinkarh.github.io/static_assets/images/portfolio/webp-images/portfolio-v0.webp
+              ">
+          <img
+            src="https://aakashdinkarh.github.io/static_assets/images/portfolio/original-images/portfolio-v0.jpg"
+            alt="Portfolio Image"
+            style="max-width: 300px; width: 100%; vertical-align: middle"
+          />
+        </picture>
       </div>
     </div>
 
@@ -74,12 +82,20 @@
       <div id="about" class="info about">
         <h3>About</h3>
         <div class="info-container">
-          <img
-            src="Photo.jpeg"
-            class="info"
-            style="max-width: 300px; width: 100%; vertical-align: middle"
-            alt="about image (Aakash Dinkar)"
-          />
+          <picture>
+            <source srcset="
+                  https://aakashdinkarh.github.io/static_assets/images/portfolio/avif-images/photo.avif
+                ">
+            <source srcset="
+                  https://aakashdinkarh.github.io/static_assets/images/portfolio/webp-images/photo.webp
+                ">
+            <img 
+              class="card" 
+              style="max-width: 300px; width: 100%; vertical-align: middle" 
+              src="https://aakashdinkarh.github.io/static_assets/images/portfolio/original-images/photo.jpeg" 
+              alt="about image - Aakash Dinkar"
+              loading="lazy" />
+          </picture>
           <div class="info">
             Hi, I am Aakash Dinkar. I've graduated from IIT BHU (Varanasi) in
             May 2022, with degree of Btech in Civil Engineering.<br />
